@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import Header from '../components/Header';
 import 'normalize.css';
-import '../common/layout.less';
+import '../common/layout.scss';
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
       <div>
         <Header />
         <nav>
-          <li><Link to='/'>Home</Link></li>
+          <li id="home"><Link to='/'>Home</Link></li>
           <li><Link to='/picture'>Picture</Link></li>
           <li><Link to='/counter'>Counter</Link></li>
         </nav>

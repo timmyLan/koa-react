@@ -4,7 +4,7 @@ require('babel-polyfill')
 require('babel-core/register')({
   plugins: [
     ['babel-plugin-transform-require-ignore', {
-      extensions: ['.less', '.css']
+      extensions: ['.less', '.css','.scss']
     }],
     ['inline-replace-variables', {
       __SERVER__: true
