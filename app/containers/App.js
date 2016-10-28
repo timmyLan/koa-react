@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import Header from '../components/Header';
-import 'normalize.css';
 import '../common/layout.scss';
 
 class App extends Component {
@@ -14,6 +13,7 @@ class App extends Component {
           <li id="home"><Link to='/'>Home</Link></li>
           <li><Link to='/picture'>Picture</Link></li>
           <li><Link to='/counter'>Counter</Link></li>
+          <li><Link to='/button'>Button</Link></li>
         </nav>
         {this.props.children}
       </div>

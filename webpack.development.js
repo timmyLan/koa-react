@@ -56,10 +56,13 @@ module.exports = {
         include: includes,
         loader: 'style!css!sass!postcss'
       },
+
       { test: /\.woff2?$/, loader: 'url?limit=10000&minetype=application/font-woff' },
-      { test: /\.ttf$/, loader: 'url?limit=10000&minetype=application/octet-stream' },
-      { test: /\.eot$/, loader: 'file' },
-      { test: /\.svg$/, loader: 'url?limit=10000&minetype=image/svg+xml' },
+      { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: "url?limit=10000&mimetype=application/font-woff" },
+      { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&mimetype=application/octet-stream" },
+      { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,    loader: "file" },
+      { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&mimetype=image/svg+xml" },
+
       { test: /\.(png|jpg|jpeg|gif)$/i, loader: 'url?limit=10000&name=[name].[ext]' },
       { test: /\.json$/, loader: 'json' },
       { test: /\.html?$/, loader: 'file?name=[name].[ext]' }
