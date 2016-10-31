@@ -7,10 +7,12 @@ import '../common/layout.scss';
 class App extends Component {
   render() {
     return (
-      <div>
+      <section>
         <Header/>
-        {this.props.children}
-      </div>
+        <section className="contain">
+          {this.props.children}
+        </section>
+      </section>
     );
   }
 }

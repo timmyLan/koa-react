@@ -3,28 +3,31 @@ import { ButtonToolbar,Button } from 'react-bootstrap';
 export default class index extends Component {
   render() {
     return (
-      <ButtonToolbar>
-        {/* Standard button */}
-        <Button>Default</Button>
+      <section>
+          <h2>Just test react-bootstrap~</h2>
+          <ButtonToolbar>
+            {/* Standard button */}
+            <Button>Default</Button>
 
-        {/* Provides extra visual weight and identifies the primary action in a set of buttons */}
-        <Button bsStyle="primary">Primary</Button>
+            {/* Provides extra visual weight and identifies the primary action in a set of buttons */}
+            <Button bsStyle="primary">Primary</Button>
 
-        {/* Indicates a successful or positive action */}
-        <Button bsStyle="success">Success</Button>
+            {/* Indicates a successful or positive action */}
+            <Button bsStyle="success">Success</Button>
 
-        {/* Contextual button for informational alert messages */}
-        <Button bsStyle="info">Info</Button>
+            {/* Contextual button for informational alert messages */}
+            <Button bsStyle="info">Info</Button>
 
-        {/* Indicates caution should be taken with this action */}
-        <Button bsStyle="warning">Warning</Button>
+            {/* Indicates caution should be taken with this action */}
+            <Button bsStyle="warning">Warning</Button>
 
-        {/* Indicates a dangerous or potentially negative action */}
-        <Button bsStyle="danger">Danger</Button>
+            {/* Indicates a dangerous or potentially negative action */}
+            <Button bsStyle="danger">Danger</Button>
 
-        {/* Deemphasize a button by making it look like a link while maintaining button behavior */}
-        <Button bsStyle="link">Link</Button>
-      </ButtonToolbar>
+            {/* Deemphasize a button by making it look like a link while maintaining button behavior */}
+            <Button bsStyle="link">Link</Button>
+          </ButtonToolbar>
+      </section>
     );
   }
 }

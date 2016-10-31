@@ -26,6 +26,9 @@ export default class Header extends Component {
             <LinkContainer to='/button'>
               <NavItem eventKey={4}>Button</NavItem>
             </LinkContainer>
+            <LinkContainer to='/form'>
+              <NavItem eventKey={4}>Form</NavItem>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

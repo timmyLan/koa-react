@@ -1,3 +1,4 @@
+// 页面渲染节点
 import { match } from 'react-router';
 import renderCtrl from '../controllers/serverRenderCtrl';
 

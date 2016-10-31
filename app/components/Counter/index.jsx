@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-
+import {Button} from 'react-bootstrap';
 export default class Counter extends Component {
   static proTypes = {
     increment: PropTypes.func.isRequired,
@@ -11,17 +11,20 @@ export default class Counter extends Component {
   render() {
     const { increment, incrementIfOdd, incrementAsync, decrement, counter } = this.props
     return (
-      <p>
+      <section>
+        <h2>To play counter game~</h2>
+        <p>打开控制台查看redux工作~</p>
         Counter: {counter} times
         {' '}
-        <button onClick={increment}>+</button>
+        <Button onClick={increment} bsStyle="success">+</Button>
         {' '}
-        <button onClick={decrement}>-</button>
+        <Button onClick={decrement} bsStyle="danger">-</Button>
         {' '}
-        <button onClick={incrementIfOdd}>Increment if odd</button>
+        <Button onClick={incrementIfOdd} bsStyle="info">Increment if odd</Button>
         {' '}
-        <button onClick={incrementAsync}>Increment Async</button>
-      </p>
+        <Button onClick={incrementAsync} bsStyle="primary">Increment Async</Button>
+      </section>
+
     );
   }
 }
