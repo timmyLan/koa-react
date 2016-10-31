@@ -14,16 +14,16 @@ export default class Header extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
-            <IndexLinkContainer to='/' activeClassName="active">
+            <IndexLinkContainer to='/'>
               <NavItem eventKey={1}>Home</NavItem>
             </IndexLinkContainer>
-            <LinkContainer to='/picture' activeClassName="active">
+            <LinkContainer to='/picture'>
               <NavItem eventKey={2}>Picture</NavItem>
             </LinkContainer>
-            <LinkContainer to='/counter' activeClassName="active">
+            <LinkContainer to='/counter'>
               <NavItem eventKey={3}>Counter</NavItem>
             </LinkContainer>
-            <LinkContainer to='/button' activeClassName="active">
+            <LinkContainer to='/button'>
               <NavItem eventKey={4}>Button</NavItem>
             </LinkContainer>
           </Nav>
