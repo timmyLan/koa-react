@@ -8,13 +8,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
-        <nav>
-          <li id="home"><Link to='/'>Home</Link></li>
-          <li><Link to='/picture'>Picture</Link></li>
-          <li><Link to='/counter'>Counter</Link></li>
-          <li><Link to='/button'>Button</Link></li>
-        </nav>
+        <Header/>
         {this.props.children}
       </div>
     );
